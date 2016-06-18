@@ -2,7 +2,7 @@
 $(function() {
   function showNavbar() {
     dust.isDebug = true;
-    dust.render("navbar.dust", {}, function(err,out) {
+    dust.render("navbar", {}, function(err,out) {
       if (err != undefined) {
         console.log('This is the err: %s', err );
       }
@@ -19,7 +19,7 @@ $(function() {
   }
 
   function showMainPage() {
-    dust.render("mainPage.dust", {}, function(err, out) {
+    dust.render("mainPage", {}, function(err, out) {
       if (err != undefined) {
         console.log('This is the err: %s', err );
       }
