@@ -1,0 +1,23 @@
+{
+  "name": "whatever",
+  "version": "1.0.0",
+  "authors": [
+    "geir <geir.sjurseth@gmail.com>"
+  ],
+  "description": "demo showing movie theater selection with associated lego toys",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "async": "~1.0.0",
+    "bootstrap": "~3.3.4",
+    "dustjs-linkedin": "~2.7.1",
+    "util": "~3.46.1",
+    "dustjs-linkedin-helpers": "~1.7.2"
+  }
+}
