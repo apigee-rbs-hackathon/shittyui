@@ -16,7 +16,7 @@
                     {/lt}
                       <div>
                       <div class="row">
-                          <div class="col-xs-4">Virtual Account Name</div>
+                          <div class="col-xs-4">Account Name</div>
                           <div class="col-xs-4">Account Limit</div>
                           <div class="col-xs-4">Balance</div>
                       </div>
@@ -24,7 +24,7 @@
                         <a data-toggle="collapse" data-target="#{@nospaces}{.name}{/nospaces}" href="#{@nospaces}{.name}{/nospaces}">
                           <div class="col-xs-4">{.name}</div>
                           <div class="col-xs-4">{.limit}</div>
-                          <div class="col-xs-4"><p class="text-success"><strong>{.balance}</strong></p></div>
+                          <div class="col-xs-4"><p><strong>{.balance}</strong></p></div>
                         </a>
                       </div>
                     </div>

@@ -15,6 +15,7 @@ dust.helpers.nospaces = nospaces;
 
 // document ready stuff
 $(function() {
+
   function showNavbar() {
     dust.isDebug = true;
     dust.render("navbar", {}, function(err,out) {
@@ -162,4 +163,11 @@ $(function() {
   // Let's first populate our list of catalogs when we first load the page
   showNavbar();
   showVaccounts();
+
+  /*
+  $('.navbar-nav li a').click(function(){
+    $(".navbar-tggle").collapse('hide');
+  });
+  */
+
 }); // end document ready

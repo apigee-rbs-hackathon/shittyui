@@ -3,8 +3,9 @@
   <form role="addNewProductForm">
       <div class="form-group">
       <div class="input-group">
-          <label class="col-xs-3 control-label">Vaccount</label>
-          <div class="col-xs-5 selectContainer">
+          <!-- <label class="col-xs-3 control-label">Vaccount</label> -->
+          <span class="input-group-addon" id="basic-addon1">VAccount</span>
+          <div class="col-xs-10 selectContainer">
               <select id="vaccountName" class="form-control" name="Vaccount">
                   <option>-- Select Vaccount Name --</option>
                   {#vaccounts}
