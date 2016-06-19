@@ -3,22 +3,28 @@
   <form role="addNewProductForm">
       <div class="form-group">
       <div class="input-group">
-          <!-- <label class="col-xs-3 control-label">Vaccount</label> -->
-          <span class="input-group-addon" id="basic-addon1">VAccount</span>
-          <div class="col-xs-10 selectContainer">
+          <!-- <label class="col-xs-3 control-label">Vaccount</label>
+          <span class="input-group-addon" id="basic-addon1">VAccount</span> -->
+          <div class="col-md-8 selectContainer">
               <select id="vaccountName" class="form-control" name="Vaccount">
-                  <option>-- Select Vaccount Name --</option>
+                  <option>-- Select VAccount --</option>
                   {#vaccounts}
                   <option value="{.}">{.}</option>
                   {/vaccounts}
               </select>
+          <br />
+          <br />
           </div>
       </div>
-        <span class="input-group-addon" id="basic-addon1">TextMatch</span>
+        <span class="input-group-addon" id="basic-addon1">Text Match</span>
         <input id="textMatch" type="text" class="form-control" aria-describedby="basic-addon1">
+          <br />
+          <br />
         <span class="input-group-addon" id="basic-addon1">Limit</span>
         <input id="limit" type="text" class="form-control" aria-describedby="basic-addon1">
-        <button type="button" data-dismiss="modal" id="addVaccountBtn" class="btn btn-primary">Add New Virtual Account</button>
+          <br />
+          <br />
+        <button type="button" data-dismiss="modal" id="addVaccountBtn" class="btn btn-primary">Add Virtual Account</button>
       </div>
   </form>
 </div>
