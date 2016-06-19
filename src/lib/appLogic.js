@@ -57,7 +57,7 @@ $(function() {
           }
         });
         */
-        cb( null, { "vaccounts": ['Fashion','Groceries','Eating Out','Recreational Lubrication','Insurance'] } );
+        cb( null, { "vaccounts": ['Fashion','Groceries','Night Out','Insurance'] } );
       },
       function(data,cb) {
         var daOthers = [];
@@ -76,7 +76,7 @@ $(function() {
             $(document).on('click','#addVaccountBtn',function(){
             var newData = {
               "name": $('#vaccountName').val(),
-              "tags": [$('#textMatch').val()],
+              "tags": $('#textMatch').val().split(','),
               "id": "575fcfedad9cdc9e12f38e64",
               "limit": $('#limit').val() };
             addNewVaccount( newData );
