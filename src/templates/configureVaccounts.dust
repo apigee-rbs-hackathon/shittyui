@@ -3,9 +3,10 @@
   <form role="addNewProductForm">
       <div class="form-group">
       <div class="input-group">
-          <label class="col-xs-3 control-label">Size</label>
+          <label class="col-xs-3 control-label">Vaccount</label>
           <div class="col-xs-5 selectContainer">
-              <select id="vaccountName" class="form-control" name="size">
+              <select id="vaccountName" class="form-control" name="Vaccount">
+                  <option>-- Select Vaccount Name --</option>
                   {#vaccounts}
                   <option value="{.}">{.}</option>
                   {/vaccounts}
