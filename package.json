@@ -1,0 +1,31 @@
+{
+  "name": "shittyui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apigee-rbs-hackathon/shittyui.git"
+  },
+  "author": "Geir Sjurseth <geir.sjurseth@gmail.com> (http://gsjurseth.blogspot.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apigee-rbs-hackathon/shittyui/issues"
+  },
+  "homepage": "https://github.com/apigee-rbs-hackathon/shittyui#readme",
+  "dependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-dust": "^3.0.0",
+    "gulp-flatten": "^0.3.0",
+    "gulp-serve": "^1.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "vinyl-paths": "^2.1.0"
+  }
+}
