@@ -1,0 +1,22 @@
+<div class="modal-body">
+
+  <form role="addNewProductForm">
+      <div class="form-group">
+      <div class="input-group">
+          <label class="col-xs-3 control-label">Size</label>
+          <div class="col-xs-5 selectContainer">
+              <select id="vaccountName" class="form-control" name="size">
+                  {#vaccounts}
+                  <option value="{.}">{.}</option>
+                  {/vaccounts}
+              </select>
+          </div>
+      </div>
+        <span class="input-group-addon" id="basic-addon1">TextMatch</span>
+        <input id="textMatch" type="text" class="form-control" aria-describedby="basic-addon1">
+        <span class="input-group-addon" id="basic-addon1">Limit</span>
+        <input id="limit" type="text" class="form-control" aria-describedby="basic-addon1">
+        <button type="button" data-dismiss="modal" id="addVaccountBtn" class="btn btn-primary">Add New Virtual Account</button>
+      </div>
+  </form>
+</div>
