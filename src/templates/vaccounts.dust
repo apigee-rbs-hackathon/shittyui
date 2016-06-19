@@ -14,19 +14,18 @@
                     {:else}
                     <li class="list-group-item">
                     {/lt}
-                      <div data-toggle="collapse" data-target="#{@nospaces}{.name}{/nospaces}">
+                      <div>
                       <div class="row">
                           <div class="col-xs-4">Virtual Account Name</div>
                           <div class="col-xs-4">Account Limit</div>
                           <div class="col-xs-4">Balance</div>
                       </div>
                       <div class="row">
-                          <div class="col-xs-4">
-                            <a data-toggle="collapse" data-target="#{@nospaces}{.name}{/nospaces}">{.name}</a>
-
-                          </div>
+                        <a data-toggle="collapse" data-target="#{@nospaces}{.name}{/nospaces}" href="#{@nospaces}{.name}{/nospaces}">
+                          <div class="col-xs-4">{.name}</div>
                           <div class="col-xs-4">{.limit}</div>
                           <div class="col-xs-4"><p class="text-success"><strong>{.balance}</strong></p></div>
+                        </a>
                       </div>
                     </div>
 
