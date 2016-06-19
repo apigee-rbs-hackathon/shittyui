@@ -1,5 +1,9 @@
 var baseurl = 'http://bbank-test.apigee.net/v1/vaccounts';
 var baasurl = 'https://api.usergrid.com/bbank/categories/vaccounts';
+var accid = '';
+
+
+var bearerToken = sessionStorage.getItem("jwt");
 
 function nospaces(chunk, context, bodies, params) {
   return chunk.tap(function(data) {
@@ -96,16 +100,19 @@ $(function() {
 
 //http://bbank-test.apigee.net/v1/vaccounts
   function showVaccounts() {
+    //$(document).off('click','.daSelector');
+    $(document).off('click','#addVaccountBtn');
     async.waterfall([
       function(cb) {
         $.ajax({ url: baseurl,
-          //headers: { apikey: key },
+          headers: { Authorization: "Bearer " + bearerToken },
           success: function( data ) {
             cb( null, data );
           }
         });
       },
       function(data,cb) {
+        accid = data.accId;
         dust.render("vaccounts", data, function(err, out) {
           if (err != undefined) {
             console.log('This is the err: %s', err );
@@ -151,7 +158,6 @@ $(function() {
     }
   );
 }
-
 
   // Let's first populate our list of catalogs when we first load the page
   showNavbar();
